@@ -1,0 +1,29 @@
+
+@media (min-width: 720px){
+    body{
+        width: 80%;
+        padding: 0;
+    }
+
+    .other{
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 40px 40px; /* row-gap column gap */
+
+    }
+
+    li{
+        border: none;
+        flex: 1 1 300px;
+    }
+    
+}
+
+@media (min-width: 1024px){
+    body{
+        max-width: 1315px;
+    }
+
+}
