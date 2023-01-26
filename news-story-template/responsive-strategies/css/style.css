@@ -6,8 +6,11 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0.01rem;
 }
+
 body { 
-    margin: auto; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
     padding: 20px;
 }
 
@@ -86,9 +89,3 @@ li:hover{
     opacity: 0.6;
 }
 
-img {
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-  }
