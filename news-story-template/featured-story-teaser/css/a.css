@@ -1,0 +1,143 @@
+.featured{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fimg{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.oimg {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.link:hover {
+    opacity: 0.6;
+}
+
+@media (min-width: 720px) {
+    body {
+        width: 80%;
+        padding: 0;
+        margin-top: 5rem;
+    }
+
+    .other {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 40px 40px;
+        /* row-gap column gap */
+
+    }
+
+    li {
+        border: none;
+        flex: 1 1 250px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .bigdescrip {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .smalltitle {
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .date {
+        font-size: 12px;
+    }
+
+    .source{
+        font-size: 12px;
+    }
+
+    .featured {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .side {
+        width: 60%;
+        margin-left: 30px;
+    }
+    
+    .fimg {
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 1315px;
+    }
+
+    li {
+        flex: 1 1 300px;
+    }
+
+    /* .smalltitle{
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    p{
+        font-size: 15px;
+        line-height: 22px;
+    } */
+
+    h2{
+        font-size: 32px;
+        margin-top: 15px;
+    }
+    
+    .bigdescrip{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .smalltitle{
+        font-size: 23px;
+        line-height: 26px;
+    }
+    
+    .date{
+        font-size: 16px;
+
+    }
+    
+    .source{
+        font-size: 14px;
+
+    }
+    
+    .featured{
+        align-items: center;
+    }
+
+}

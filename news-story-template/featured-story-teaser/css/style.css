@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.01rem;
+}
+
+body { 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+pre{
+    display: none;
+}
+
+h1{
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 45px;
+    margin-top: 15px;
+}
+
+.bigdescrip{
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bigdate, .bigsource{
+    opacity: 0.6;
+}
+
+
+
+p{
+    font-size: 17px;
+    line-height: 22px;
+}
+
+span{
+    display: none;
+}
+
+.other{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+    border-bottom: 1.5px solid black;
+}
+
+.smalltitle{
+    font-size: 23px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.descrip{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.date{
+    opacity: 0.6;
+    font-style: italic;
+    font-size: 16px;
+    float: right;
+    /* margin-top: 15px; */
+}
+
+.source{
+    opacity: 0.6;
+    font-size: 14px;
+    margin-top: 10px;
+
+    /* display: flex;
+    justify-content: right; */
+}
+
+.content{
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+span{
+    line-height: 20px;
+}
+
+li:hover{
+    opacity: 0.6;
+}
+
