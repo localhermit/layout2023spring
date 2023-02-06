@@ -1,11 +1,11 @@
 {
   "entrypoints": [
     {
-      "name": "Strategy A",
+      "name": "Option A",
       "file": "strategya.html"
     },
     {
-      "name": "Strategy B",
+      "name": "Option B",
       "file": "strategyb.html"
     }
   ]
