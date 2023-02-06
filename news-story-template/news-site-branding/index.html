@@ -7,18 +7,31 @@
   <style>
     div{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
+    }
+    vh{
+        border-left: 3px solid black;
     }
     img {
-      max-width: 50%;
+      max-width: 100%;
+    }
+    column{
+        max-width: 45%;
     }
   </style>
 </head>
 
 <body>
     <div>
-        <img src="news-01.jpg" alt="logo">
-        <img src="news-02.jpg" alt="brand">
+        <column>
+            <h1>Exploration</h1>
+            <img src="news-01.jpg" alt="logo">
+        </column>
+        <vh></vh>
+        <column>
+            <h1>Final</h1>
+            <img src="news-02.jpg" alt="brand">
+        </column>
     </div>
 </body>
 
