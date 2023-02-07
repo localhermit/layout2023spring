@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Option A</title>
+  <title>Masthead</title>
   <style>
     [v-cloak] {
       display: none;
@@ -13,11 +13,29 @@
       max-width: 100%;
     }
   </style>
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/a.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/dkl2ugl.css">
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
+  <nav>
+    <div class="menu-icon">
+      <span class="line-1"></span>
+      <span class="line-2"></span>
+      <span class="line-3"></span>
+    </div>
+
+    <img src="logo-03.png" arc="logo" class="logo">
+    <div class="nav">
+      <a href="#">News</a>
+      <a href="#">Politics</a>
+      <a href="#">Sport</a>
+      <a href="#">Culture</a>
+      <a href="#">Lifestyle</a>
+      <a href="#">Media</a>
+    </div>
+
+  </nav>
 
   <div id="news-stories-list-template" v-cloak>
 
@@ -29,18 +47,21 @@
       <div class="side">
         <!-- <h1>Featured Story</h1> -->
         <a class="link" v-bind:href="featuredStory.url">
-          <!-- Story date -->
-          <p class="bigdate">{{ featuredStory.date }}</p>
+          <div class="left">
+            <!-- Story date -->
+            <p class="bigdate">{{ featuredStory.date }}</p>
 
-          <!-- Story title (linked) -->
-          <h2>{{ featuredStory.title }}</h2>
+            <!-- Story title (linked) -->
+            <h2>{{ featuredStory.title }}</h2>
 
-          <!-- Story description -->
-          <p class="bigdescrip">{{ featuredStory.description }}</p>
+          </div>
+          <div class="right">
+            <!-- Story description -->
+            <p class="bigdescrip">{{ featuredStory.description }}</p>
 
 
-          <!-- Story content (truncated) -->
-          <span v-html="featuredStory.content"></span>
+            <!-- Story content (truncated) -->
+            <span v-html="featuredStory.content"></span>
         </a>
         <!-- Story source (linked) -->
         <div class="bigsource">
@@ -48,49 +69,50 @@
         </div>
 
       </div>
-
     </div>
 
-    <!-- Debugging info, you can comment this section out when you don't need it. -->
-    <pre>The featured story object: {{ featuredStory | json }}</pre>
+  </div>
 
-    <!-- Stories List -->
-    <h1>Other Stories</h1>
-    <ul class="other">
-      <!-- This 'loop' generates a list item for each story in the 'stories' array. -->
-      <li v-for="story in stories">
+  <!-- Debugging info, you can comment this section out when you don't need it. -->
+  <pre>The featured story object: {{ featuredStory | json }}</pre>
 
-        <!-- Story title (linked) -->
-        <a v-bind:href="story.url">
+  <!-- Stories List -->
+  <h1>Other Stories</h1>
+  <ul class="other">
+    <!-- This 'loop' generates a list item for each story in the 'stories' array. -->
+    <li v-for="story in stories">
 
-          <h3 class="smalltitle">{{ story.title }}</h3>
+      <!-- Story title (linked) -->
+      <a v-bind:href="story.url">
 
-          <!-- Story image -->
-          <img class="oimg" v-bind:src="story.image">
-        </a>
-        <!-- Story source (linked) -->
-        <div class="source">
-          <a v-bind:href="story.source.url">{{ story.source.name }}</a>
+        <h3 class="smalltitle">{{ story.title }}</h3>
+
+        <!-- Story image -->
+        <img class="oimg" v-bind:src="story.image">
+      </a>
+      <!-- Story source (linked) -->
+      <div class="source">
+        <a v-bind:href="story.source.url">{{ story.source.name }}</a>
+      </div>
+      <a v-bind:href="story.url">
+        <!-- Story content (truncated) -->
+        <div class="content">
+          <span v-html="story.content"></span>
         </div>
-        <a v-bind:href="story.url">
-          <!-- Story content (truncated) -->
-          <div class="content">
-            <span v-html="story.content"></span>
-          </div>
 
-          <!-- Story description -->
-          <p class="descrip">{{ story.description }}</p>
+        <!-- Story description -->
+        <p class="descrip">{{ story.description }}</p>
 
-          <!-- Story date -->
-          <p class="date">{{ story.date }}</p>
+        <!-- Story date -->
+        <p class="date">{{ story.date }}</p>
 
-        </a>
+      </a>
 
-      </li>
-    </ul>
+    </li>
+  </ul>
 
-    <!-- Debugging info, you can comment this section out when you don't need it. -->
-    <pre>The stories array: {{ stories | json }}</pre>
+  <!-- Debugging info, you can comment this section out when you don't need it. -->
+  <pre>The stories array: {{ stories | json }}</pre>
 
   </div>
 
