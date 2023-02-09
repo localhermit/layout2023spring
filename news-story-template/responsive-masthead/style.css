@@ -57,9 +57,9 @@ p {
     line-height: 22px;
 }
 
-span {
+/* span {
     display: none;
-}
+} */
 
 .other {
     list-style: none;
@@ -106,9 +106,9 @@ li {
     opacity: 0.5;
 }
 
-span {
+/* span {
     line-height: 20px;
-}
+} */
 
 li:hover {
     opacity: 0.6;
