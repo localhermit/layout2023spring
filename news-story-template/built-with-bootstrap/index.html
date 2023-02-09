@@ -19,8 +19,8 @@
   </style>
 </head>
 
-<body class="w-90 mt-5 container">
-  <nav class="pt-5">
+<body class="w-90 mt-md-5 container px-4">
+  <div class="pt-5">
     <div class="d-flex align-items-center">
       <h1 class="text-uppercase me-5 w-100"> The Newsroom </h1>
       
@@ -75,14 +75,17 @@
       </div>
     </div>
 
-  </nav>
+  </div>
 
   <div id="news-stories-list-template" v-cloak>
 
     <!-- The Featured Story -->
     <div class="d-flex align-items-center mb-5 mt-5 pt-5 flex-column flex-xl-row">
       <!-- Story image -->
-      <img class="me-xl-5 w-100 w-xl-75" v-bind:src="featuredStory.image">
+      <img class="me-xl-5 w-50 d-none d-xl-block" v-bind:src="featuredStory.image">
+
+      <img class="me-xl-5 w-100 d-xl-none" v-bind:src="featuredStory.image">
+
 
       <div class="d-flex align-items-center flex-column flex-lg-row flex-xl-column mt-4">
         <!-- <h1>Featured Story</h1> -->
