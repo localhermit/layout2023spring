@@ -57,9 +57,9 @@ p {
     line-height: 22px;
 }
 
-/* span {
+span {
     display: none;
-} */
+}
 
 .other {
     list-style: none;
@@ -123,7 +123,7 @@ nav {
 
 .logo {
     z-index: 2;
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -357,7 +357,7 @@ nav {
 
 
     .logo {
-        width: 50%;
+        width: 40%;
     }
 
     .featured {
