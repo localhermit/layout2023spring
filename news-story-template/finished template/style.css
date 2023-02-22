@@ -53,15 +53,13 @@ h2 {
     margin-bottom: 20px;
 }
 
-.bigdate,
-.bigsource a {
+.bigdate{
     opacity: 0.7;
     font-family: "lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
 }
-
 
 
 p {
@@ -121,7 +119,7 @@ li {
     justify-content: right; */
 }
 
-.source a {
+.source a, .bigsource a {
     font-family: "lato", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -129,7 +127,7 @@ li {
     color: #48c8bc;
 }
 
-.source a:hover{
+.source a, .bigsource a:hover{
     text-decoration: underline;
 }
 
