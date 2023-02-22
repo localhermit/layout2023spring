@@ -113,48 +113,46 @@
 
       </div>
     </div>
+    <!-- Debugging info, you can comment this section out when you don't need it. -->
+    <pre>The featured story object: {{ featuredStory | json }}</pre>
 
-  </div>
+    <!-- Stories List -->
+    <h1>Other Stories</h1>
+    <ul class="other">
 
-  <!-- Debugging info, you can comment this section out when you don't need it. -->
-  <pre>The featured story object: {{ featuredStory | json }}</pre>
+      <!-- This 'loop' generates a list item for each story in the 'stories' array. -->
+      <li v-for="story in stories">
+        <a v-bind:href="story.url">
+          <!-- Story image -->
+          <img class="oimg" v-bind:src="story.image">
 
-  <!-- Stories List -->
-  <h1>Other Stories</h1>
-  <ul class="other">
+        </a>
 
-    <!-- This 'loop' generates a list item for each story in the 'stories' array. -->
-    <li v-for="story in stories">
-      <a v-bind:href="story.url">
-        <!-- Story image -->
-        <img class="oimg" v-bind:src="story.image">
-
-      </a>
-
-      <!-- Story source (linked) -->
-      <div class="source">
-        <a v-bind:href="story.source.url">{{ story.source.name }}</a>
-      </div>
-
-      <!-- Story title (linked) -->
-      <a v-bind:href="story.url" class="text">
-        <h3 class="smalltitle">{{ story.title }}</h3>
-
-        <!-- Story content (truncated) -->
-        <div class="content">
-          <span v-html="story.content"></span>
+        <!-- Story source (linked) -->
+        <div class="source">
+          <a v-bind:href="story.source.url">{{ story.source.name }}</a>
         </div>
 
-        <!-- Story description -->
-        <p class="descrip">{{ story.description }}</p>
+        <!-- Story title (linked) -->
+        <a v-bind:href="story.url" class="text">
+          <h3 class="smalltitle">{{ story.title }}</h3>
 
-        <!-- Story date -->
-        <p class="date">{{ story.date }}</p>
+          <!-- Story content (truncated) -->
+          <div class="content">
+            <span v-html="story.content"></span>
+          </div>
 
-      </a>
+          <!-- Story description -->
+          <p class="descrip">{{ story.description }}</p>
 
-    </li>
-  </ul>
+          <!-- Story date -->
+          <p class="date">{{ story.date }}</p>
+
+        </a>
+
+      </li>
+    </ul>
+  </div>
 
   <footer>
     <a href="https://gnews.io/" class="copyright">
