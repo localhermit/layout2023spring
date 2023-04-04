@@ -1,0 +1,63 @@
+body{
+  background-color: darkgray;  
+}
+
+.stopwatch{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    left: 40%;
+    top: 200px;
+}
+
+.stopwatch > *{
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 100%;
+}
+
+.rotate{
+    transform: rotate(45deg);
+}
+
+.needle{
+    transform-origin: 50%, 60%;
+}
+
+.background{
+    height: 80%;
+    width: 80%;
+    background-color: pink;
+    border-radius: 50%;
+    bottom: 0;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 200ms;
+}
+
+.stopwatch.danger .backbround{
+    background-color: red ;
+}
+
+.stopwatch:active .background{
+    background-color: aliceblue;
+}
+
+.stopwatch:active .button{
+    transform: translateY(2%);
+}
+
+.stopwatch.running .needle{
+    animation: needle-rotate 10s linear infinite forwards;
+}
+
+@keyframes needle-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
