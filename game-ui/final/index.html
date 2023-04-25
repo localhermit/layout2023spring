@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bunny Jump</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/bdn4xsc.css">
+</head>
+
+<body>
+    <!-- controls -->
+    <div class="top">
+
+        <div class="inside">
+            <div class="hs">
+                <h2>BEST 12345</h2>
+            </div>
+            <div class="right">
+                <div class="current">
+                    <h2 class="currentscore">00000</h2>
+                </div>
+                <div class="ammo">
+                    <h2 class="ammoberry">0</h2>
+                    <img src="berry.png" alt="berries" class="berry jump">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- visuals -->
+    <div class="visual">
+        <img src="bush.png" alt="bush" class="bush move">
+        <img src="moving bunny.gif" alt="bush" class="mc">
+        <img src="berry.png" alt="berries" class="berry move" id="berry">
+        <img src="moving moster.gif" alt="monster" class="monster move">
+        <img src="berry.png" alt="berries" class="berry bullet">
+    </div>
+
+    <!-- background -->
+    <img src="background.png" alt="stuff" class="ref">
+
+    <footer>
+        <div>
+            <P>
+                COLLECT BERRIES FOR AMMOS TO KILL MONSTERS! ENJOY :D
+            </P>
+            <p>
+                Press spacebar to jump and avoid obstacles.
+            </p>
+            <p>
+                Press enter or on the gun to shoot berries ->
+            </p>
+        </div>
+        <div id="pulsa" class="pulsa">
+            <img src="gun.png" alt="gun" class="gun">
+        </div>
+    </footer>
+
+    <div class="over">
+        <h2>GAME OVER</h2>
+        <img src="https://cdn.onlinewebfonts.com/svg/img_106832.png" alt="retry" class="close">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
